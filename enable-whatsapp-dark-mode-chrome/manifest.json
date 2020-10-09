@@ -1,0 +1,11 @@
+{
+    "name": "enable whatsapp dark mode chrome",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": ["https://web.whatsapp.com/", "https://www.facebook.com/"],
+          "js": ["content.js"]
+        }
+      ]
+}
