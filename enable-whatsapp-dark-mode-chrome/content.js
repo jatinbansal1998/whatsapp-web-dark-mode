@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         if (window.location.hostname == "web.whatsapp.com")
             document.body.classList.add("dark");
@@ -20,7 +20,6 @@ window.onload = function () {
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     const newColorScheme = e.matches ? "dark" : "light";
-    console.log(newColorScheme);
     if (newColorScheme == "dark") {
         if (window.location.hostname == "web.whatsapp.com")
             document.body.classList.add("dark");
@@ -38,5 +37,3 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
         }
     }
 });
-
-

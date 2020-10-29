@@ -1,11 +1,13 @@
 {
-    "name": "enable whatsapp dark mode chrome",
+    "name": "Auto Dark Mode for WhatsApp and others",
     "version": "1.0",
     "manifest_version": 2,
-    "content_scripts": [
-        {
-          "matches": ["https://web.whatsapp.com/", "https://www.facebook.com/"],
-          "js": ["content.js"]
-        }
-      ]
+    "description": "Automatically switch WhatsApp web , Facebook web from dark to light to dark based on system color scheme",
+    "icons": {
+        "128": "baseline_nights_stay_black_18dp.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://web.whatsapp.com/", "https://www.facebook.com/"],
+        "js": ["content.js"]
+    }]
 }
